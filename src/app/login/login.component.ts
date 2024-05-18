@@ -11,6 +11,9 @@ export class LoginComponent {
     console.log(AuthService.userName, "login")
   }
   navigate(){
-    this.AuthService.navigate('dashboard')
+const username =  document.getElementById('username')as HTMLInputElement
+
+    this.AuthService.login(username.value || 'Mohan');
+    this.AuthService.navigate('dashboard');
   }
 }

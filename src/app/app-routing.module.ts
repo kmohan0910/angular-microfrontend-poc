@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
 
+
     {
       path:'dashboard',
       loadChildren:()=> import ('dashboard/Module').then(m=>m.DashboardModule)
@@ -12,7 +13,11 @@ const routes: Routes = [
     {
       path: 'login',
       component: LoginComponent
-    }
+    },
+    {
+      path: '**',
+      redirectTo: 'login'
+    },
 
 
 ];

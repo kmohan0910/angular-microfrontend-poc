@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'microfrontend';
   constructor(private AuthService : AuthLibService){
     console.log(AuthService.userName, "App")
-    this.AuthService.update()
+   // this.AuthService.update()
   }
 }

@@ -1,2 +1,67 @@
-<p>dashboard works!</p>
-<button (click)="login()"> Logout</button>
+<div class="dashboard-container">   <div class="sidebar">
+        <h2>My Dashboard</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i>Analytics</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>Dashboard</h2>
+            <div class="user-wrapper">
+                <img src="https://via.placeholder.com/40" alt="User Image">
+                <div>
+                    <h4>{{username}}</h4>
+                    <small (click)="logout()">Logout</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card">
+                    <div>
+                        <h3>54</h3>
+                        <span>New Users</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>79</h3>
+                        <span>Sales</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>124</h3>
+                        <span>Comments</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>$6K</h3>
+                        <span>Revenue</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <!-- Add charts here -->
+                <h3>Analytics</h3>
+                <p>Chart data...</p>
+            </div>
+        </main>
+    </div>
+</div>

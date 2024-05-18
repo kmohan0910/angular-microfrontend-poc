@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 export class AuthLibService {
   userName: string ='No User'
   constructor(private router : Router) { }
-  login(){
-    this.userName="Mohan"
+  login(userName?: any){
+    this.userName=userName||"Mohan"
   }
   navigate(s: string){
 
